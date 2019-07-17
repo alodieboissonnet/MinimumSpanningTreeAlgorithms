@@ -11,3 +11,8 @@ Here is a quick reminder of how Kruskal’s algorithm works:
 2. the edges e1 , . . . , en are considered one by one in increasing order, and at each step i one decides if ei is to be selected: ei is selected if and only if it satisfies the property that its two extremities are not connected using the previously selected edges (testing this property is handled by the union-find structure).
 
 The output (the collection of selected edges) forms the minimum connecting spanning forest of the graph. Note that this forest will not contain some trivial components which are formed from a single vertex and which are therefore without an edge.
+
+# Implementing Prim’s algorithm
+First, we recall how Prim’s algorithm works. It uses a priority queue q (here, implemented using the Java PriorityQueue implementation over edges, where higher priority is given to an edge with a smaller distance.) The algorithm starts at a Place v, puts all edges connected to v into q, and removes v from the set of non-visited elements. Then as long as q is not empty:
+1. pick the next Edge a from q
+2. if the target u of the edge a has not been visited, then add to q all the edges connected to u, and remove u from the set of non-visited elements.
