@@ -7,10 +7,10 @@ In this project, we will implement Minimum Spanning Tree algorithms over a parti
 The package trees contains two classes UnionFind, and SpanningTree, which are used to implement both algorithms.
 The package geomap contains two classes GeoMap and Visualization, which are used to load and visualize a map in a graphical window. These classes are used for testing and their details are not important.
 The package graph contains four classes, which you should look at to understand the graph data structure :
-• The class Place represents a city on the map by its name and coordinates (latitude, longitude).
-• The class Edge represents a link between two neighbouring cities.
-• The class EdgeComparator compares two Edge objects according to their length.
-• The class EuclideanGraph represents a graph with all the cities on a map as vertices and edges between places within a specified upper bound on geodesic distance.
+- The class Place represents a city on the map by its name and coordinates (latitude, longitude).
+- The class Edge represents a link between two neighbouring cities.
+- The class EdgeComparator compares two Edge objects according to their length.
+- The class EuclideanGraph represents a graph with all the cities on a map as vertices and edges between places within a specified upper bound on geodesic distance.
 
 We will test our programs on the map of France, which is given to you in the fr.txt file. (Remember to keep the fr.txt file in the working directory of your project if you are using an IDE, or to have it in the current directory if you are running Java from the command line).
 
